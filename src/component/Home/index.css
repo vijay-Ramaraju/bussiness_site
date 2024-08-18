@@ -1,0 +1,61 @@
+
+.container {
+    padding: 20px;
+    /* margin-top: 50px; */
+    font-size: 0.8rem;
+    
+}
+.header-main-heading{
+    color: #3f80e9;
+}
+
+.cards_desription {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.each-card-container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;  */
+    background-color: #fdf6e3;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%; 
+    gap: 15px;
+    
+    text-align: center; /* Center text alignment */
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Images/Dry_fruit2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.image {
+    width: 50%; /* Make the image take full wid    th of the card */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+h3 {
+    color: #c23b22;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 2rem;
+}

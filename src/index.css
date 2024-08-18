@@ -1,0 +1,54 @@
+body {
+  margin-top: 60px; /* Add enough margin to push content below the navbar */
+  font-family: 'Roboto', sans-serif; /* Set font family */
+  color: #000; /* Dark blue-gray text */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+} */
