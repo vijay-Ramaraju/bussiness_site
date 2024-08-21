@@ -8,12 +8,12 @@
     right: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #2c3e50;
+    opacity: 0.9;
     padding: 8px;
     z-index: 1000;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .navbar-toggler {
@@ -28,7 +28,6 @@
     width: 30px;
     outline: none;
 }
-
 .navbar-toggler .bar1, .navbar-toggler .bar2, .navbar-toggler .bar3 {
     width: 100%;
     height: 3px;
@@ -49,22 +48,24 @@
     transform: rotate(-44deg) translate(5px, -5px);
 }
 
-.navbar-toggler-icon {
-    display: none;
-}
+
 
 .navbar a {
-    color: white;
+    color: #ffc107;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
+    /* font-size: 2rem; */
 }
 .nav-item{
     color: #fff;
 }
+.navbar a:hover {
+color: #f74343;
+}
 .nav-item:hover{
-    background-color: #ffc107;
+    background-color: #ffc107;;
     padding: 10px 0px;
     border-radius: 6px;
     color: #000;
@@ -79,6 +80,7 @@
 .konasima-brand {
     font-weight: bold;
     color: #ffc107;
+    font-size: 2rem;
 }
 
 .container-fluid {
@@ -93,20 +95,26 @@
     gap: 2rem;
 }
 
+@media (min-width: 769px) and (max-width:991px) {
+    .navbar-toggler {
+        display: none;
+    }
 
-/* Responsive styling */
-@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-grow: 0;
+    }
     .navbar {
-        padding: 5px;
-        font-size: 1.2rem; 
+        font-size: 1.5rem; 
     }
-
     .konasima-brand {
-        font-size: 0.8rem; 
-    }
-
-    .navbar a {
-        padding: 12px;
+        font-size: 1.5rem;
     }
 }
 
@@ -122,7 +130,26 @@
     .navbar-nav {
         display: flex;
         flex-direction: column;
-        gap: 10rem;
+        gap: 0.6rem;
+        /* width: 50%  ; */
+    }
+    .nav-item{
+        border-bottom: 1px solid #d1d1d1;
+        width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .nav-item:active{
+        background-color: transparent;        
+        padding: 0px;
+        cursor: pointer;
+        
+    }
+    .nav-item:hover{
+        background-color:transparent;
+        padding: 0px;
+        cursor: pointer
     }
 
     .navbar-nav .nav-link {
@@ -132,9 +159,13 @@
 
     .navbar-collapse {
         background-color: #2c3e50; 
+        
     }
 
     .navbar a {
         padding: 8px;
+    }
+    .contact{
+        border-bottom: 0px;
     }
 }

@@ -1,41 +1,54 @@
 
 .container {
-    padding: 20px;
+    padding: 40px;
     /* margin-top: 50px; */
     font-size: 0.8rem;
     
 }
 .header-main-heading{
     color: #3f80e9;
+    font-size: 2rem;
 }
-
-.cards_desription {
+.card-main-heading{
+    color: #ffc107;
+    text-align: left;
+    font-size: 1.8rem;
+}
+.cards_main-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* Center the cards horizontally */
 }
-
+.card-description{
+    font-size: 1.5rem;
+}
+.heath-benefits{
+    color: #f74343;
+    font-weight: 600;
+}
+.health-description{
+    font-style:italic ;
+}
 .each-card-container {
     display: flex;
     flex-direction: row;
     /* align-items: center;  */
-    background-color: #fdf6e3;
     border-radius: 8px;
     padding: 20px;
     margin: 10px 0;
     width: 100%; 
     gap: 15px;
-    
     text-align: center; /* Center text alignment */
 }
 .text-container{
     display: flex;
     flex-direction: column;
-    background-image: url('../Images/Dry_fruit2.jpg');
+    /* background-image: url('../Images/Dry_fruit2.jpg'); */
     background-size: cover;
     background-position: center;
+    padding: 10px;
     
     
 }
@@ -45,12 +58,6 @@
     height: auto; /* Keep aspect ratio */
     border-radius: 8px;
     margin-bottom: 15px; /* Space between image and text */
-}
-
-h3 {
-    color: #c23b22;
-    margin-bottom: 10px;
-    text-align: left;
 }
 
 p {

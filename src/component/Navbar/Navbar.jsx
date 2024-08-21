@@ -34,8 +34,8 @@ function Navbar() {
             <li className="nav-item">
               <Link to="/about" onClick={toggleMenu}>About</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+            <li className="nav-item contact">
+              <Link  to="/contact" onClick={toggleMenu}>Contact</Link>
             </li>
           </ul>
         </div>

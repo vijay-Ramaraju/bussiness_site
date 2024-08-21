@@ -1,6 +1,12 @@
 body {
-    margin-top: 60px; /* Add enough margin to push content below the navbar */
+    /* margin-top: 60px; Add enough margin to push content below the navbar */
     font-family: 'Roboto', sans-serif; /* Set font family */
     color: #fff; /* Dark blue-gray text */
     background-color: #f4f4f4; /* Light gray background */
+}
+.app-main-container{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #b02ffcd0; */
+    
 }
