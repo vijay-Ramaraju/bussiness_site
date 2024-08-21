@@ -1,5 +1,7 @@
-import React from 'react';
-import DryFruit from '../Images/Dry_fruit.jpg';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DryFruit from '../Images/Dryfruit_black.jpg';
+import topview from '../Images/topview.jpg'
 import './index.css';
 
 function Home() {
@@ -7,14 +9,22 @@ function Home() {
     <div className="container ">
       <h1 className="my-4 header-main-heading">Welcome to Konasima Enti Putharekulu</h1>
       <div className="cards_main-container">
-        <div className="each-card-container col-md-4 fade-in-up">
-          {/* <img className="image" src={DryFruit} /> */}
-          <div className='text-container'>
-            <h3 className='card-main-heading'>Dry Fruit Putharekulu</h3>
-            <p className='card-description'>Made with ghee and a mix of premium dry fruits, this variety is rich in flavor and nutrients.</p>
-              <p className='card-description health-description'><span className='heath-benefits'>Health Benefits:</span> Packed with vitamins and minerals, dry fruits boost immunity and provide a healthy energy source.</p>
-          </div>
-        </div>
+      <div className="each-card-container col-md-4">
+    <Carousel interval={2000}> 
+    <Carousel.Item>
+      <img className="d-block w-100" src={DryFruit} alt="Dry Fruit" />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img className="d-block w-100" src={topview} alt="Top View" />
+    </Carousel.Item>
+  </Carousel>
+  <div className='text-container'>
+    <h3 className='card-main-heading'>Dry Fruit Putharekulu</h3>
+    <p className='card-description'>Made with ghee and a mix of premium dry fruits, this variety is rich in flavor and nutrients.</p>
+    <p className='card-description health-description'><span className='heath-benefits'>Health Benefits:</span> Packed with vitamins and minerals, dry fruits boost immunity and provide a healthy energy source.</p>
+  </div>
+</div>
+
         <div className="each-card-container col-md-4 fade-in-up delay-1s">
 
         <div className='text-container'>
